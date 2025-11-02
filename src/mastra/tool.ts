@@ -56,7 +56,7 @@ export async function toneTool(text: string): Promise<tone> {
     
     try {
         const response = await genAI.models.generateContent({
-            model: "gemini-2.5-flash",
+            model: "google/gemini-2.5-flash",
             contents: prompt,
         });
 

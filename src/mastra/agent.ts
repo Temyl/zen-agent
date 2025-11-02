@@ -1,5 +1,5 @@
 import { Agent } from "@mastra/core/agent";
-import { toneTool } from "../tools";
+import { toneTool } from "./tool";
 
 export const zenAgent = new Agent({
     name: 'Zen Agent',

@@ -2,10 +2,11 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { StatusCodes } from "http-status-codes";
-import a2aAgentRoute from "./controller/router"; 
+
 import { Mastra } from "@mastra/core";
-import { zenAgent } from "./internals/agents";
-import { toneTool } from "./internals/tools";
+import { zenAgent } from "./mastra/agent";
+import { toneTool } from "./mastra/tool";
+import { a2aAgentRoute } from "./mastra/router";
 
 dotenv.config();
 
@@ -25,7 +26,7 @@ app.get("/", (req, res) => {
 });
 
 
-app.use("/", a2aAgentRoute);
+app.use("/", a2aAgentRoute['']);
 
 const mastra = new Mastra({
     agents: {zenAgent},

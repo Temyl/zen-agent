@@ -1,6 +1,6 @@
 import z from "zod";
-import { TONE } from "../enum";
-import { tone } from "../type";
+import { TONE } from "../internals/enum";
+import { tone } from "../internals/type";
 
 import dotenv from 'dotenv';
 import { GoogleGenAI } from "@google/genai";

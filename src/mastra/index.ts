@@ -4,4 +4,7 @@ import { zenAgent } from "./agent";
 
 export const mastra = new Mastra({
   agents: { zenAgent},
+  bundler: {
+    externals: ["@google/genai"], 
+  },
 });

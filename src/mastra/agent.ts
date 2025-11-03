@@ -3,6 +3,7 @@ import { toneTool } from "./tool";
 
 export const zenAgent = new Agent({
     name: 'Zen Agent',
+    id: 'zenAgent',
     instructions: `
         You are a friendly tone analyzer.
         When given a message or text, do the following:

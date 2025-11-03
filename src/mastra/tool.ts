@@ -25,7 +25,7 @@ export async function toneTool(text: string): Promise<tone> {
         };
     }
 
-    const geminiApIkey =  process.env.GEMINI_API_KEY;
+    const geminiApIkey =  process.env.GOOGLE_GENERATIVE_AI_API_KEY;
 
     if (!geminiApIkey) {
         throw new Error(
